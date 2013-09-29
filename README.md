@@ -45,7 +45,7 @@ dependencies, and start the server using `(nreplds.core/start-server :path
 
 To connect to a UDS programatically, and `[nreplds "0.1"]`, load `nreplds.core`,
 and use the standard `clojure.tools.nrepl/url-connect` with a URI like
-`nreplds:///path/to/sock.sock. Because of an implementation detail the path must
+`nreplds:///path/to/sock.sock`. Because of an implementation detail the path must
 be absolute.
 
 To add `nreplds:///` URIs to `lein repl`, add `[lein-nreplds "0.1"]` to your
@@ -68,7 +68,7 @@ not support NIO). Unix domain socket support is very important.
 A plea to whoever is in charge of nREPL
 =======================================
 
-I had to copy/paste nREPL code because the interfaces provided were not sufficiently general.
+I had to copy/paste some nREPL code because the interfaces provided were not sufficiently general.
 
 - Please extend the `nrepl.server/start-server` function to optionally take a `ServerSocket`.
 - Please extend the `nrepl/connect` function to optionally take a `Socket`.
