@@ -53,6 +53,11 @@ leiningen plugins. Now you can connect to a UDS using `lein repl :connect
 nreplds:///path/to/sock.sock`. Because of an implementation detail the path must
 be absolute.
 
+Forwarding a UDS over SSH
+=========================
+
+You'll need to use [socat](http://www.dest-unreach.org/socat/). See [here](http://www.debian-administration.org/users/dkg/weblog/68).
+
 A plea to whoever is in charge of Java
 ======================================
 
