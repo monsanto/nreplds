@@ -4,7 +4,7 @@ nreplds
 This project gives you the ability to 1) start an embedded nREPL server on a
 Unix Domain Socket (UDS) and 2) connect to a nREPL using a UDS.
 
-Currently nREPLs can only listen on TCP ports. Even if the port is selected is
+Currently nREPLs can only listen on TCP ports. Even if the port selected is
 local-only, this is a security risk, since if any process (running as any user)
 is compromised, it is possible for an attacker to connect to your nREPL and run
 malicious code in the context of your Clojure application. If you connect to a
