@@ -48,10 +48,10 @@ and use the standard `clojure.tools.nrepl/url-connect` with a URI like
 `nreplds:///path/to/sock.sock`. Because of an implementation detail the path must
 be absolute.
 
-To add `nreplds:///` URIs to `lein repl`, add `[lein-nreplds "0.1"]` to your
-leiningen plugins. Now you can connect to a UDS using `lein repl :connect
+To connect to `nreplds:///` URIs from shell, add `[lein-nreplds "0.1.1"]` to your
+leiningen plugins. Now you can connect to a UDS using `lein nreplds :connect
 nreplds:///path/to/sock.sock`. Because of an implementation detail the path must
-be absolute.
+be absolute. This connection to `nreplds:///` from shell only tested in leiningen 2.4.2.
 
 Forwarding a UDS over SSH
 =========================

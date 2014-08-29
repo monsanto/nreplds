@@ -1,4 +1,4 @@
-(defproject lein-nreplds "0.1"
+(defproject lein-nreplds "0.1.1"
   :description "Unix domain socket support for nREPL"
   :url "https://github.com/monsanto/nreplds"
   :license {:name "Eclipse Public License"
